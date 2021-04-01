@@ -229,3 +229,8 @@ p.text-hint {
   padding: 10px;
   margin-top: 10px;
 }
+
+button.a-book {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
