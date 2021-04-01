@@ -30,15 +30,15 @@ $("document").ready(function () {
     // Definition of exercises types
     window.exercises_types = {
         'ID001': {
-            'plugin_name': 'demo_1',
-            'title': 'Titlu aici',
-            'description': 'Descriere aici.',
+            'plugin_name': 'order_1',
+            'title': 'Cărți consecutive',
+            'description': 'Pune-le în ordinea corectă.',
             'points': 1
         },
         'ID002': {
-            'plugin_name': 'demo_2',
-            'title': 'Titlu aici 2',
-            'description': 'Descriere aici 2.',
+            'plugin_name': 'order_2',
+            'title': 'Cărți neconsecutive',
+            'description': 'Care apare prima în Biblie?',
             'points': 2
         },
     }
@@ -202,13 +202,13 @@ $("document").ready(function () {
         alertify.message("Nivel nou. Felicitări!");
     }
 
-    $.fn.demo_1 = function () {
+    $.fn.order_1 = function () {
       debugger;
       $(document).trigger("exercise_success_event", ["SUCCESS"]);
       $(document).trigger("exercise_fail_event", ["FAIL"]);
     };
 
-    $.fn.demo_2 = function () {
+    $.fn.order_2 = function () {
       debugger;
       $(document).trigger("exercise_success_event", ["SUCCESS"]);
       $(document).trigger("exercise_fail_event", ["FAIL"]);

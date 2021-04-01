@@ -9,12 +9,12 @@
  *
  * #151515
  */
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 body {
   color: #151515;
   background: #7c6c77;
-  background-image: url('images/bg-paper-blue.png');
+  background-image: url('images/bg.png');
 }
 
 div.container {
@@ -40,7 +40,7 @@ div.row.row-header h3 {
   position: relative;
   top: 5px;
   font-size: 40px;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Syne Mono', monospace;
 }
 
 @media screen and (max-width: 400px) {
