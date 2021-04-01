@@ -32,7 +32,7 @@ $("document").ready(function () {
         'ID001': {
             'plugin_name': 'order_1',
             'title': 'Cărți consecutive',
-            'description': 'Pune-le în ordinea corectă.',
+            'description': 'Selectează-le în ordinea corectă.',
             'points': 1
         },
         'ID002': {
@@ -85,7 +85,7 @@ $("document").ready(function () {
     // Definition of levels
     window.levels = {
         1: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M001', 'M002', 'M006', 'M007'],
             'fail_messages': ['F001', 'F007', 'F008', 'F009', 'F010']
         },
@@ -203,12 +203,42 @@ $("document").ready(function () {
     }
 
     $.fn.order_1 = function () {
-      debugger;
-      $(document).trigger("exercise_success_event", ["SUCCESS"]);
-      $(document).trigger("exercise_fail_event", ["FAIL"]);
+      // Select x consecutive books. The user will press one by one in
+      // correct order.
+      var x = 5;  // TODO change by level
+      var random_start = random_between(1, 66-x);
+      var selected_books = [];
+      var correct_books = [];
+      for (var i = random_start; i < random_start + x; i++) {
+        selected_books.push(window.all_books[i]);
+        correct_books.push(window.all_books[i]);
+      }
+
+      var random_books = shuffle(selected_books);
+
+      for (var j = 0; j < random_books.length; j++) {
+        $("div#exercise-board").append("<button class='btn btn-success a-book'>" + random_books[j] + "</button>");
+      }
+
+      $("button.a-book").on("click", function() {
+        var this_book = $(this).text();
+        if (this_book == correct_books[0]) {
+          $(this).remove();
+          var removed_book = correct_books.shift();
+          if (correct_books.length == 0) {
+            $(document).trigger("exercise_success_event", ["SUCCESS"]);
+          }
+        } else {
+          $(document).trigger("exercise_fail_event", ["FAIL"]);
+        }
+      });
+
+      // $(document).trigger("exercise_success_event", ["SUCCESS"]);
     };
 
     $.fn.order_2 = function () {
+      // Select x non-consecutive random books. The user will select the
+      // first one.
       debugger;
       $(document).trigger("exercise_success_event", ["SUCCESS"]);
       $(document).trigger("exercise_fail_event", ["FAIL"]);
@@ -294,12 +324,12 @@ $("document").ready(function () {
         refresh_texts();
         alertify.error(message);
 
-        if (window.consecutive_fails >= 3) {
-            $("div.hint p.text-hint").show();
-            $("div.hint button").hide();
-            window.hint_used = true;
-            $("div.next-exercise button").show();
-        }
+        // if (window.consecutive_fails >= 3) {
+        //     $("div.hint p.text-hint").show();
+        //     $("div.hint button").hide();
+        //     window.hint_used = true;
+        //     $("div.next-exercise button").show();
+        // }
     }
 
     function start_game() {
