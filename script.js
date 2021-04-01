@@ -241,12 +241,6 @@ $("document").ready(function () {
 
         var plugin_name = exercise.plugin_name;
 
-        if (choosen_exercise_id == 'ID003') {
-          select_the_text_to_play(80);
-        } else {
-          select_the_text_to_play();
-        }
-
         $("div#exercise-board")[plugin_name]();
 
     }
