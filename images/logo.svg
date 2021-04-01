@@ -25,18 +25,18 @@
      guidetolerance="10.0"
      pagecolor="#ffffff"
      gridtolerance="10.0"
-     inkscape:zoom="3.7553611"
+     inkscape:zoom="2.6554413"
      objecttolerance="10.0"
      borderopacity="1.0"
      inkscape:current-layer="svg1"
-     inkscape:cx="119.68535"
-     inkscape:cy="99.625011"
+     inkscape:cx="88.992043"
+     inkscape:cy="95.197829"
      inkscape:window-y="27"
-     inkscape:window-x="72"
+     inkscape:window-x="60"
      inkscape:window-height="1016"
      showgrid="false"
      inkscape:pageopacity="0.0"
-     inkscape:window-width="1848"
+     inkscape:window-width="1860"
      inkscape:document-rotation="0"
      inkscape:window-maximized="1" />
   <metadata
@@ -54,7 +54,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2009-04-01T07:50:10</dc:date>
         <dc:description>An open bible by Aaron Johnson</dc:description>
         <dc:source>https://openclipart.org/detail/23578/open-bible-by-anonymous-23578</dc:source>
@@ -88,32 +88,30 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
-  <g
-     id="g894"
-     transform="matrix(1.1311464,0,0,1.1311464,281.17838,-12.354873)"
-     inkscape:export-filename="/home/ghitabizau/Desktop/logo-va-100.png"
-     inkscape:export-xdpi="135.55331"
-     inkscape:export-ydpi="135.55331">
-    <circle
-       style="fill:#edd95c;fill-opacity:1;stroke:none;stroke-width:0.864097;stroke-opacity:1"
-       id="path852"
-       cx="-146.72118"
-       cy="78.307724"
-       r="31.304901" />
-    <g
-       id="g887">
-      <path
-         id="path2354"
-         style="fill:#d8d8d8;fill-opacity:1;fill-rule:evenodd;stroke:#1c1c1c;stroke-width:1.14313;stroke-opacity:1"
-         d="m -173.62191,75.08202 14.42858,21.87721 c 4.65483,-6.51584 15.35909,-10.70655 21.41082,-9.30965 7.44634,-5.11893 15.82548,-4.18842 18.15289,-2.32741 l -16.75599,-21.87492 c 0,0 -11.63706,-3.25792 -16.29188,3.72203 -8.37685,-3.72203 -18.617,2.32741 -20.94442,7.91274 z" />
-      <path
-         id="path2356"
-         style="fill:#ffffff;fill-rule:evenodd;stroke:#1c1c1c;stroke-width:1.14313;stroke-opacity:1"
-         d="m -171.83862,72.19676 12.56756,19.0834 c 5.11893,-9.30964 15.35909,-13.49807 20.48031,-7.44634 7.91274,-11.17295 17.2201,0 18.1506,0 L -137.39614,61.0261 c 0,0 -11.17066,-5.12122 -15.82548,1.86102 -4.65254,-3.72432 -15.8232,0.9305 -18.617,9.30964 z" />
-      <path
-         id="path3599"
-         style="fill:none;stroke:#1c1c1c;stroke-width:1.14313;stroke-opacity:1"
-         d="m -152.91069,62.98085 14.43087,19.5498 c 1.86101,2.79152 -1.8633,7.91274 6.04944,11.17066" />
-    </g>
-  </g>
+  <circle
+     style="fill:#7c6c77;fill-opacity:1;stroke:none;stroke-width:0.97742;stroke-opacity:1"
+     id="path852"
+     cx="115.21525"
+     cy="76.222626"
+     r="35.410427"
+     inkscape:export-xdpi="677.76642"
+     inkscape:export-ydpi="677.76642" />
+  <path
+     id="path2354"
+     style="fill:#ffe787;fill-opacity:1;fill-rule:evenodd;stroke:#1c1c1c;stroke-width:1.29305;stroke-opacity:1"
+     d="m 84.786582,72.573884 16.320838,24.746327 c 5.26529,-7.370369 17.37338,-12.110676 24.21877,-10.530577 8.4229,-5.790259 17.90093,-4.737716 20.53358,-2.632642 L 126.90629,59.413255 c 0,0 -13.16322,-3.685184 -18.4285,4.210161 -9.475447,-4.210161 -21.058556,2.632642 -23.691208,8.950468 z"
+     inkscape:export-xdpi="677.76642"
+     inkscape:export-ydpi="677.76642" />
+  <path
+     id="path2356"
+     style="fill:#ffffff;fill-rule:evenodd;stroke:#1c1c1c;stroke-width:1.29305;stroke-opacity:1"
+     d="m 86.803744,69.310232 14.215746,21.586119 c 5.79026,-10.530565 17.37338,-15.268293 23.16623,-8.4229 8.95047,-12.638242 19.47846,0 20.53099,0 L 125.76323,56.67458 c 0,0 -12.63565,-5.792849 -17.90093,2.105086 -5.26271,-4.212751 -17.89836,1.052532 -21.058556,10.530566 z"
+     inkscape:export-xdpi="677.76642"
+     inkscape:export-ydpi="677.76642" />
+  <path
+     id="path3599"
+     style="fill:none;stroke:#1c1c1c;stroke-width:1.29305;stroke-opacity:1"
+     d="m 108.214,58.885689 16.32343,22.113686 c 2.10507,3.157617 -2.10766,8.950467 6.8428,12.635651"
+     inkscape:export-xdpi="677.76642"
+     inkscape:export-ydpi="677.76642" />
 </svg>
