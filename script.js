@@ -3,7 +3,7 @@ $("document").ready(function () {
 
     // Init game
     window.number_of_levels = 10;
-    window.points_per_level = 100;
+    window.points_per_level = 3;
     window.current_exercise_type = 'ID001';
     window.is_logged_in = false;
     window.consecutive_successes = 0;
@@ -90,47 +90,47 @@ $("document").ready(function () {
             'fail_messages': ['F001', 'F007', 'F008', 'F009', 'F010']
         },
         2: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M002', 'M003', 'M006', 'M007', 'M008'],
             'fail_messages': ['F002', 'F003', 'F007', 'F008', 'F009', 'F010']
         },
         3: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M003', 'M004', 'M006', 'M007', 'M008', 'M009', 'M010'],
             'fail_messages': ['F003', 'F007', 'F008', 'F009', 'F010'],
         },
         4: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M004', 'M005', 'M006', 'M007', 'M008', 'M009', 'M010'],
             'fail_messages': ['F003', 'F004', 'F005', 'F007', 'F008', 'F009', 'F010'],
         },
         5: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M005', 'M006', 'M007', 'M008', 'M009', 'M010'],
             'fail_messages': ['F006', 'F007', 'F008', 'F009', 'F010'],
         },
         6: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M005', 'M006', 'M007', 'M008', 'M009', 'M010'],
             'fail_messages': ['F006', 'F007', 'F008', 'F009', 'F010'],
         },
         7: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M005', 'M006', 'M007', 'M008', 'M009', 'M010'],
             'fail_messages': ['F006', 'F007', 'F008', 'F009', 'F010'],
         },
         8: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M005', 'M006', 'M007', 'M008', 'M009', 'M010'],
             'fail_messages': ['F006', 'F007', 'F008', 'F009', 'F010'],
         },
         9: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M005', 'M007', 'M008', 'M009', 'M010'],
             'fail_messages': ['F006', 'F007', 'F008', 'F009', 'F010'],
         },
         10: {
-            'exercises_types': ['ID001', 'ID002'],
+            'exercises_types': ['ID001'],
             'success_messages': ['M005', 'M007', 'M008', 'M009', 'M010'],
             'fail_messages': ['F006', 'F007', 'F008', 'F009', 'F010'],
         }
@@ -205,7 +205,7 @@ $("document").ready(function () {
     $.fn.order_1 = function () {
       // Select x consecutive books. The user will press one by one in
       // correct order.
-      var x = 5;  // TODO change by level
+      var x = window.user_profile.level + 1;
       var random_start = random_between(1, 66-x);
       var selected_books = [];
       var correct_books = [];
