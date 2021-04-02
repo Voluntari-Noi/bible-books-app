@@ -1,3 +1,4 @@
+// TODO: idea - books ? VT/NT
 $("document").ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
