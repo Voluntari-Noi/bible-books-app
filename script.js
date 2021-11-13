@@ -1,4 +1,3 @@
-// TODO: idea - books ? VT/NT
 $("document").ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -145,15 +144,6 @@ $("document").ready(function () {
     function random_between(min, max) {
         // return a random number between min and max
         return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    function more_and_more_probable_by_level_up(level) {
-        // a way to generate difficulty for each level
-        var min = 1;
-        var number = 1;
-        var max = level + 1;
-        var res = random_between(min, max) === number;
-        return !res;
     }
 
     function shuffle(array) {
