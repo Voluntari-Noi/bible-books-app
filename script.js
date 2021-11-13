@@ -207,6 +207,9 @@ $("document").ready(function () {
 
       var random_books = shuffle(selected_books);
 
+      $("div#exercise-board div.selected-books").remove();
+      $("div#exercise-board").append("<div class='selected-books'></div>");
+
       for (var j = 0; j < random_books.length; j++) {
         $("div#exercise-board").append("<button class='btn btn-success a-book'>" + random_books[j] + "</button>");
       }
@@ -214,6 +217,7 @@ $("document").ready(function () {
       $("button.a-book").on("click", function() {
         var this_book = $(this).text();
         if (this_book == correct_books[0]) {
+          $("div.selected-books").append("<span class='book'>" + this_book + "</span> ");
           $(this).remove();
           var removed_book = correct_books.shift();
           if (correct_books.length == 0) {

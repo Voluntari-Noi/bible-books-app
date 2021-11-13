@@ -234,3 +234,15 @@ button.a-book {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+div.selected-books {
+  margin-bottom: 2em;
+  min-height: 40px;
+}
+
+div.selected-books span.book {
+  background: #EEE;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 7px;
+}
